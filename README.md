@@ -27,4 +27,3 @@ Color base (fuerte): #ff9052 \\
 3. Ángel
 
 # RECUERDEN HACER UN COMMIT DECENTE
-# ClonGrillExpress

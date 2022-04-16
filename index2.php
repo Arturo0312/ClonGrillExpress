@@ -89,9 +89,9 @@
                     <nav class="header__menu">
                         <div class="header2">
                             <ul>
-                                <li class="active"><a href="./index.html">Catálogo</a></li>
+                                <li class="active"><a href="./index.php">Catálogo</a></li>
                                 <li><a href="./blog.html">Receta</a></li>
-                                <li><a href="logout.php">Cerrar sesión</a></li>
+                                <li><a href="./logout.php">Cerrar sesión</a></li>
                                 <li><a href="#">Acciones</a>
                                     <ul class="header__menu__dropdown">
                                         <li><a href="./PublicarBlog.html">Añadir receta</a></li>

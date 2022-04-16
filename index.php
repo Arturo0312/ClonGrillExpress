@@ -1,8 +1,8 @@
 <?php
-require ('Conexion.php');
-// require ('Control_sesion.php');
-
-// echo $user;
+include 'Conexion.php';
+// session_start();
+// $_USER = $_SESSION['id'];
+// echo ($_USER);
 ?>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -88,7 +88,7 @@ require ('Conexion.php');
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Catálogo</a></li>
+                            <li class="active"><a href="./index.php">Catálogo</a></li>
                             <li><a href="./blog.html">Receta</a></li>
                             <li><a href="./login.php">Iniciar sesión</a></li>
                         </ul>
@@ -98,10 +98,9 @@ require ('Conexion.php');
                     <div class="header__cart">
 
                         <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            
                         </ul>
-                        <div class="header__cart__price">Artículo: <span>$150.00</span></div>
+                        
 
                     </div>
 
@@ -161,7 +160,7 @@ require ('Conexion.php');
                             <!-- <span>FRUIT FRESH</span> -->
                             <h2>GrillExpress</h2>
                             <!-- <p>LA CALIDAD DEL NORTE</p> -->
-                            <a href="shop-grid.html" class="primary-btn">Comprar ahora</a>
+                            <a href="shop-grid.php" class="primary-btn">Comprar ahora</a>
                         </div>
                     </div>
                 </div>
@@ -237,7 +236,7 @@ require ('Conexion.php');
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="<?php echo $row["Imagen"];?>">
                             <ul class="featured__item__pic__hover">
-                                <li><button onclick="enviar(<?php echo $row['codigo']?>)" type="button" class="btn btn-link btn-sm px-4 " data-ripple-color="dark">
+                                <li><button onclick="enviar(<?php echo $row['codigo']?>,<?php echo $_USER ?>)" type="button" class="btn btn-link btn-sm px-4 " data-ripple-color="dark">
                             <i class="fa fa-shopping-cart"></i></button></li>
                             </ul>
                         </div>

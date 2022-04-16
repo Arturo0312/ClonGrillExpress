@@ -85,9 +85,9 @@ require ('Conexion.php');
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Catálogo</a></li>
+                            <li class="active"><a href="./index.php">Catálogo</a></li>
                             <li><a href="./blog.html">Receta</a></li>
-                            <li><a href="./login.html">Iniciar sesión</a></li>
+                            <li><a href="./login.php">Iniciar sesión</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -95,10 +95,10 @@ require ('Conexion.php');
                     <div class="header__cart">
 
                         <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                           
+                            <li><a href="shoping-cart.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                         </ul>
-                        <div class="header__cart__price">Artículo: <span>$150.00</span></div>
+                        
 
                     </div>
 

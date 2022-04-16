@@ -1,3 +1,9 @@
+<?php
+include 'Conexion.php';
+session_start();
+$_USER = $_SESSION['id'];
+//echo ($_USER);
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -21,6 +27,9 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,400&family=Roboto+Mono&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,81 +38,80 @@
         <div class="loader"></div>
     </div>
 
-   <!-- Humberger Begin -->
-   <div class="humberger__menu__overlay"></div>
-   <div class="humberger__menu__wrapper">
-       <div class="humberger__menu__logo">
-           <a href="#"><img src="img/logitor.png" alt=""></a>
-       </div>
-       <div class="humberger__menu__cart">
-           <ul>
-               <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-               <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-           </ul>
-           <div class="header__cart__price">Artículo: <span>$150.00</span></div>
-       </div>
-       <div class="humberger__menu__widget">
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="img/logitor.png" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">Artículo: <span>$150.00</span></div>
+        </div>
+        <div class="humberger__menu__widget">
 
-           <div class="header__top__right__auth">
-               <a href="#"><i class="fa fa-user"></i>Ingresar</a>
-           </div>
-       </div>
-       <nav class="humberger__menu__nav mobile-menu">
-           <ul>
-               <li class="active"><a href="./index.html">Catálogo</a></li>
-               <li><a href="./blog.html">Receta</a></li>
-               <li><a href="./login.html">Iniciar sesión</a></li>
-           </ul>
-           </ul>
-       </nav>
-       <div id="mobile-menu-wrap"></div>
-       <div class="header__top__right__social">
-           <a href="#"><i class="fa fa-facebook"></i></a>
-           <a href="#"><i class="fa fa-twitter"></i></a>
-           <a href="#"><i class="fa fa-linkedin"></i></a>
-           <a href="#"><i class="fa fa-pinterest-p"></i></a>
-       </div>
+            <div class="header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i>Ingresar</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.php">Catálogo</a></li>
+                <li><a href="./blog.html">Receta</a></li>
+                <li><a href="./login.php">Iniciar sesión</a></li>
+            </ul>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        </div>
 
-   </div>
-   <!-- Humberger End -->
+    </div>
+    <!-- Humberger End -->
 
-   <!-- Header Section Begin -->
-   <header class="header">
-       <div class="container">
-           <div class="row">
-               <div class="col-lg-3">
-                   <div class="header__logo">
-                       <a href="./index.html"><img src="img/logitor.png" alt=""></a>
-                   </div>
-               </div>
-               <div class="col-lg-6">
-                   <nav class="header__menu">
-                       <ul>
-                           <li class="active"><a href="./index.html">Catálogo</a></li>
-                           <li><a href="./blog.html">Receta</a></li>
-                           <li><a href="./login.html">Iniciar sesión</a></li>
-                       </ul>
-                   </nav>
-               </div>
-               <div class="col-lg-3">
-                   <div class="header__cart">
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logitor.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index3.php">Catálogo</a></li>
+                            <li><a href="./blog.html">Receta</a></li>
+                            <li><a href="logout.php">Cerrar sesión</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
 
-                       <ul>
-                           <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                           <li><a href="carrito.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                       </ul>
-                       <div class="header__cart__price">Artículo: <span>$150.00</span></div>
+                        <ul>
+                            
+                            <li><a href="shoping-cart.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                        </ul>
+                        
 
-                   </div>
+                    </div>
 
-               </div>
-           </div>
-           <div class="humberger__open">
-               <i class="fa fa-bars"></i>
-           </div>
-       </div>
-   </header>
-   <!-- Header Section End -->
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
 
     <!-- Hero Section Begin -->
     <br>
@@ -118,7 +126,11 @@
                     <div class="breadcrumb__text">
                         <h2>CARRITO DE:</h2>
                         <div class="breadcrumb__option">
-                            <h3><USUARIO></h3>
+                            <?php $query="Select nombre from usuario where id=".$_USER;
+                            $resultado=mysqli_query($conexion,$query);
+                            $nombre_user = mysqli_fetch_array($resultado)?>
+                            <h3><?php echo $nombre_user['nombre'];?></h3>
+                            <?php mysqli_free_result($resultado); ?>
                         </div>
                     </div>
                 </div>
@@ -143,63 +155,44 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="img/lista-productos/arrachera.jpg" alt="">
-                                        <h5>Arrachera 500gr</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        $175.00
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="2">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        $350.00
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="img/lista-productos/harina.jpg" alt="">
-                                        <h5>Tortillas de Harina 1kg</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        $90.00
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        $90.00
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="img/lista-productos/carbon.jpg" alt="">
-                                        <h5>Carbon Vegetal 3kg</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        $65.00
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        $175.00
-                                    </td>
-                                </tr>
+                            <?php $ctemporal=0; $total=0;
+                            $carrito="Select id from carrito where id_cliente=".$_USER;
+                            $resultado=mysqli_query($conexion,$carrito);
+                            $carrito_cliente = mysqli_fetch_array($resultado);?>
+                            <?php $detalle_carrito="Select * from detalle_carito where id_carrito=".$carrito_cliente['id']." order by codigo_producto";
+                                $resultado_carrito=mysqli_query($conexion,$detalle_carrito);
+                                while($row = mysqli_fetch_array($resultado_carrito)) {?>
+                                    <?php $producto= "Select * from producto where codigo=". $row['codigo_producto'];
+                                    $resultado_producto=mysqli_query($conexion,$producto);
+                                    while($fila = mysqli_fetch_array($resultado_producto)){
+                                        $presql= "SELECT id FROM carrito where id_cliente=".$_USER;
+                                        $preresultado=mysqli_query($conexion,$presql);
+                                        $idcarrito=mysqli_fetch_array($preresultado);
+                                        $id=$idcarrito['id'];
+                                        $cod=$fila["codigo"];
+                                        $repetidos="SELECT codigo_producto, count(*) FROM detalle_carito where id_carrito='$id' and codigo_producto='$cod' HAVING COUNT(*)>1";
+                                        $resrep=mysqli_query($conexion,$repetidos);
+                                        $cant=mysqli_fetch_array($resrep);
+                                        if($ctemporal!=$fila["codigo"]){?>
+                                    <tr id="<?php echo $fila["codigo"]?>">
+                                        <td><?php echo $fila["nombre"];?> <img width="200px" height="200px" src=<?php echo $fila["Imagen"];?>></td>
+                                        <td><?php echo "$".$fila["Precio"];?></td>
+                                        <td> <?php if (isset($cant[1]))
+                                        {
+                                            echo $cant[1];
+                                        }
+                                        else
+                                        {
+                                            echo 1;
+                                        } ?> </td>
+                                        <td> <?php if(isset($cant[1])){echo "$".$fila["Precio"]*$cant[1];}
+                                        else{ echo"$".$fila["Precio"];}?> </td>
+                                    </tr>
+                                    <?php $ctemporal=$fila["codigo"];}$total+=$fila["Precio"];}mysqli_free_result($resultado_producto);?>
+                                <?php }
+                                mysqli_free_result($resultado_carrito);
+                                mysqli_free_result($resultado);
+                                ?>
                             </tbody>
                         </table>
                     </div>
@@ -210,9 +203,9 @@
                     <div class="shoping__checkout">
                         <h5>TOTAL DEL CARRITO</h5>
                         <ul>
-                            <li>Total <span>$505.00</span></li>
+                            <li>Total <span>$<?php echo $total;?></span></li>
                         </ul>
-                        <a href="./orden-de-compra.html" class="primary-btn">CERRAR COMPRA</a>
+                        <a href="./orden-de-compra.php?total=<?php echo $total;?>" class="primary-btn">CERRAR COMPRA</a>
                     </div>
                 </div>
             </div>

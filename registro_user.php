@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $username_err = "Por favor ingrese un usuario.";
     } else{
         // Prepare a select statement
-        $sql = "SELECT id FROM usuario WHERE nombre = ?";
+        $sql = "SELECT id FROM usuario WHERE correo = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -78,13 +78,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
         
         // Prepare an insert statement
-        $sql = "INSERT INTO usuario (nombre, apellido, correo, direccion, contraseña) VALUES ('prueba','prueba',?,'domicilio ficticio', ?)";
+        $sql = "INSERT INTO usuario (nombre, apellido, correo, direccion, contraseña) VALUES (?,?,?,?,?)";
          
         if($stmt = mysqli_prepare($link, $sql)){
+            $param_n=$_POST['nombre'];
+            $param_ap=$_POST['apellido'];
+            $paramdir=$_POST['direccion'];
+            $param_username = $username;
+            $param_password = $password;
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
+            mysqli_stmt_bind_param($stmt, "sssss",$param_n,$param_ap,$param_username,$paramdir ,$param_password);
             
             // Set parameters
+            $param_n=$_POST['nombre'];
+            $param_ap=$_POST['apelldo'];
+            $paramdir=$_POST['direccion'];
             $param_username = $username;
             $param_password = $password;
             
@@ -172,9 +180,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Catálogo</a></li>
+                            <li class="active"><a href="./index.php">Catálogo</a></li>
                             <li><a href="./blog.html">Receta</a></li>
-                            <li><a href="./login.html">Iniciar sesión</a></li>
+                            <li><a href="./login.php">Iniciar sesión</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -182,10 +190,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <div class="header__cart">
 
                         <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="carrito.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            <
                         </ul>
-                        <div class="header__cart__price">Artículo: <span>$150.00</span></div>
+                        
 
                     </div>
 
@@ -206,17 +213,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">   
             <div class="form-group ">
                 <label>Nombre</label>
-                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                <input type="text" name="nombre" class="form-control" value="<?php echo $username; ?>">
                 <span class="help-block"></span>
             </div>  
             <div class="form-group ">
                 <label>Apellido</label>
-                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                <input type="text" name="apellido" class="form-control" value="<?php echo $username; ?>">
                 <span class="help-block"></span>
             </div> 
             <div class="form-group ">
                 <label>Direccion</label>
-                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                <input type="text" name="direccion" class="form-control" value="<?php echo $username; ?>">
                 <span class="help-block"></span>
             </div> 
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
