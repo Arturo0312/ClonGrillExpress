@@ -5,7 +5,7 @@ include ('Conexion.php');
 
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-  header("location: welcome.php");
+  header("location: index3.php");
   exit;
 }
  
@@ -185,7 +185,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <ul>
                             <li class="active"><a href="./index.php">Catálogo</a></li>
                             <li><a href="./blog.html">Receta</a></li>
-                            <li><a href="./login.html">Iniciar sesión</a></li>
+                            <li><a href="./login.php">Iniciar sesión</a></li>
                         </ul>
                     </nav>
                 </div>
