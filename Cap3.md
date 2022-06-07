@@ -81,6 +81,8 @@ what a schematic diagram would look like, let's create a simple circuit that
 contained a battery, resistor and LED. The Fritzing diagram for this circuit
 would look like this:
 
+![](https://www.pinterest.com.mx/pin/147774431497450320/)
+
 In this diagram, it is easy to see what components are needed and how they
 are connected; however, in more complex circuits it can be harder to see
 how everything is connected. The image from the Fritzing diagram also
