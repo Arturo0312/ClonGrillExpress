@@ -69,6 +69,54 @@ a 220 Ohm resistor, which is connected to the digital 12 pin of the Arduino.
 This is a pretty easy diagram to understand because the diagrams look like
 the components themselves.
 
+## Schematic diagrams
+While the Fritzing diagrams used images to represent the circuit, schematic
+diagrams use symbols. This allows for a more compact diagram, which
+makes it easier to represent complex circuits. The following diagram shows
+the symbols for some of the more common electronic components in a
+schematic diagram:
+
+
+what a schematic diagram would look like, let's create a simple circuit that
+contained a battery, resistor and LED. The Fritzing diagram for this circuit
+would look like this:
+
+In this diagram, it is easy to see what components are needed and how they
+are connected; however, in more complex circuits it can be harder to see
+how everything is connected. The image from the Fritzing diagram also
+doesn't show the value of the components. A schematic diagram offers a
+much clearer view of the circuit and if the author of the diagram chooses to,
+show the values of each component. The following diagram shows the same
+circuit in a schematic diagram:
+
+
+
+
+
+
+## Series circuits
+
+The following schematic diagram shows a series circuit:
+
+The preceding diagram shows a series circuit where the current only has
+one path from the source to the return. In this circuit, the load consists of
+two resistors. One resistor has a value of 330 ohms and the other has a
+value 220 ohms. Now let's look at several properties of a series circuit.
+
+
+
+
+
+## Parallel and series circuits
+
+There are two types of circuits that we can create. These are parallel and
+series circuits. A series circuit is a circuit where current only has one path to
+flow from the source to the return. A parallel circuit is a circuit that has
+multiple paths for the current flow. It is important to understand both types
+of circuits because the properties are different between them. Let's see look
+at the series circuit first.
+
+
 
 
 
