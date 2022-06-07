@@ -109,14 +109,70 @@ value 220 ohms. Now let's look at several properties of a series circuit.
 
 
 
-## Parallel and series circuits
+## Parallel circuits
+The following schematic diagram shows a parallel circuit:
 
-There are two types of circuits that we can create. These are parallel and
-series circuits. A series circuit is a circuit where current only has one path to
-flow from the source to the return. A parallel circuit is a circuit that has
-multiple paths for the current flow. It is important to understand both types
-of circuits because the properties are different between them. Let's see look
-at the series circuit first.
+[Link](https://www.google.com/imgres?imgurl=https%3A%2F%2Ft.pimg.jp%2F022%2F313%2F726%2F1%2F22313726.jpg&imgrefurl=https%3A%2F%2Fwww.pixtastock.com%2Fillustration%2F22313726&tbnid=UWTXURsFSffVxM&vet=12ahUKEwin9aC985v4AhXFkGoFHUAtA5UQMygAegUIARCyAQ..i&docid=h4zh3NAahFozEM&w=450&h=469&q=parallel%20circuits&client=ubuntu&ved=2ahUKEwin9aC985v4AhXFkGoFHUAtA5UQMygAegUIARCyAQ).
+
+The preceding diagram shows a parallel circuit where the current has multiple paths to the
+return. The current can either flow through the branch with the 220-ohm resistor, the
+branch with the 330-ohm resistor or both branches.
+
+In this sample circuit, as with the series circuit, the load consists of two resistors with values
+of 330 ohms and 220 ohms, however, this time the resistors are connected in parallel rather
+than series. The properties of a parallel circuit are very different than the properties of a
+series circuit. Let's look at these properties.
+
+## Resistance
+
+The total resistance of a parallel circuit will always be less than the total resistance of any
+branch within the circuit and adding additional branches will always decrease the total
+resistance of the circuit.
+
+To calculate the total resistance of a parallel circuit, take the sum of the reciprocal of the
+resistance for each component in the circuit and that equals the reciprocal of the total
+resistance. Sounds confusing? It really isn't. Here is the formula:
+
+[Link](https://unicrom.com/wp-content/uploads/resistencias-en-paralelo.png).
+
+This formula will go out to however many resistance values are needed. In the example
+circuit, there are two resistors with values to 220 ohms and 330 ohms. Therefore, to
+calculate the resistance of the circuit we would take the reciprocal of 1/220 + 1/330, which
+would equal 132 ohms.
+
+Rather than trying to calculate the resistance of a parallel circuit by hand, there are plenty
+of online calculators that you can use.
+
+## Voltage
+Each branch of a parallel circuit will have the same voltage. If we measured the voltage
+across either branch of the sample circuit it would show a voltage of 9 volts.
+
+## Current
+In a parallel circuit, current will be different in each branch. The total current of the circuit
+(the current coming out of the power source) will be equal to the sum of the current in each
+branch. This means that current coming out of the power source will equal the sum of the
+current running through the 220-ohm resistor branch and the 330-ohm resistor branch.
+
+Let's look at this with Ohm's law to see how this works. To calculate current with Ohm's
+law we use the formula I=V/R, which means the current equals the voltage divided by the
+resistance. Earlier, in the resistance section, we calculated that the resistance in the circuit
+was 132 ohms and we know that the voltage is 9 volts, therefore, the total current will equal
+9 volts/132 ohms or 0.0682 amps (68.2 milliamps).
+
+We can also use Ohm's law to calculate the current in each branch knowing that the voltage
+for each branch will be the same 9 volts. The current in the branch that contains the 220-
+ohm resistor would be 9 volts/220 ohms or 0.0409 amps (40.9 milliamps). The current in the
+branch with the 330-ohm resistor would be 9 volts/330 ohms or 0.0273 amps (27.3
+milliamps).
+
+We can now add the current from the branch that contains the 220-ohm resistor to the
+current from the branch that contains the 330-ohm resistor to get the total current of 40.9
+milliamps + 27.3 milliamps, which equals the same 68.2 milliamps coming out of the power
+source.
+
+Now that we understand the difference between parallel and series circuits, there is one
+more concept we need to understand before we can get started building things. This
+concept is a voltage drop.
 
 
 ## Voltage drop
