@@ -112,7 +112,7 @@ value 220 ohms. Now let's look at several properties of a series circuit.
 ## Parallel circuits
 The following schematic diagram shows a parallel circuit:
 
-![](https://www.google.com/imgres?imgurl=https%3A%2F%2Ft.pimg.jp%2F022%2F313%2F726%2F1%2F22313726.jpg&imgrefurl=https%3A%2F%2Fwww.pixtastock.com%2Fillustration%2F22313726&tbnid=UWTXURsFSffVxM&vet=12ahUKEwin9aC985v4AhXFkGoFHUAtA5UQMygAegUIARCyAQ..i&docid=h4zh3NAahFozEM&w=450&h=469&q=parallel%20circuits&client=ubuntu&ved=2ahUKEwin9aC985v4AhXFkGoFHUAtA5UQMygAegUIARCyAQ).
+![](https://www.google.com/imgres?imgurl=https%3A%2F%2Ft.pimg.jp%2F022%2F313%2F726%2F1%2F22313726.jpg&imgrefurl=https%3A%2F%2Fwww.pixtastock.com%2Fillustration%2F22313726&tbnid=UWTXURsFSffVxM&vet=12ahUKEwin9aC985v4AhXFkGoFHUAtA5UQMygAegUIARCyAQ..i&docid=h4zh3NAahFozEM&w=450&h=469&q=parallel%20circuits&client=ubuntu&ved=2ahUKEwin9aC985v4AhXFkGoFHUAtA5UQMygAegUIARCyAQ)
 
 The preceding diagram shows a parallel circuit where the current has multiple paths to the
 return. The current can either flow through the branch with the 220-ohm resistor, the
