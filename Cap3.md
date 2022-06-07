@@ -112,7 +112,7 @@ value 220 ohms. Now let's look at several properties of a series circuit.
 ## Parallel circuits
 The following schematic diagram shows a parallel circuit:
 
-[Link](https://www.google.com/imgres?imgurl=https%3A%2F%2Ft.pimg.jp%2F022%2F313%2F726%2F1%2F22313726.jpg&imgrefurl=https%3A%2F%2Fwww.pixtastock.com%2Fillustration%2F22313726&tbnid=UWTXURsFSffVxM&vet=12ahUKEwin9aC985v4AhXFkGoFHUAtA5UQMygAegUIARCyAQ..i&docid=h4zh3NAahFozEM&w=450&h=469&q=parallel%20circuits&client=ubuntu&ved=2ahUKEwin9aC985v4AhXFkGoFHUAtA5UQMygAegUIARCyAQ).
+![](https://www.google.com/imgres?imgurl=https%3A%2F%2Ft.pimg.jp%2F022%2F313%2F726%2F1%2F22313726.jpg&imgrefurl=https%3A%2F%2Fwww.pixtastock.com%2Fillustration%2F22313726&tbnid=UWTXURsFSffVxM&vet=12ahUKEwin9aC985v4AhXFkGoFHUAtA5UQMygAegUIARCyAQ..i&docid=h4zh3NAahFozEM&w=450&h=469&q=parallel%20circuits&client=ubuntu&ved=2ahUKEwin9aC985v4AhXFkGoFHUAtA5UQMygAegUIARCyAQ).
 
 The preceding diagram shows a parallel circuit where the current has multiple paths to the
 return. The current can either flow through the branch with the 220-ohm resistor, the
@@ -133,7 +133,7 @@ To calculate the total resistance of a parallel circuit, take the sum of the rec
 resistance for each component in the circuit and that equals the reciprocal of the total
 resistance. Sounds confusing? It really isn't. Here is the formula:
 
-[Link](https://unicrom.com/wp-content/uploads/resistencias-en-paralelo.png).
+![](https://unicrom.com/wp-content/uploads/resistencias-en-paralelo.png).
 
 This formula will go out to however many resistance values are needed. In the example
 circuit, there are two resistors with values to 220 ohms and 330 ohms. Therefore, to
