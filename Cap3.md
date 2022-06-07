@@ -119,6 +119,14 @@ of circuits because the properties are different between them. Let's see look
 at the series circuit first.
 
 
+## Voltage drop
+
+Voltage drop is defined as the amount of voltage lost through each component in the circuit
+due to impedance. Impedance is the amount of opposition that the circuit and component
+present to the current flow. We will see why voltage drop is important in the next section
+where we light up a LED.
+
+
 
 
 
