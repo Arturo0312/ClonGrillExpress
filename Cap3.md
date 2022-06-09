@@ -33,6 +33,36 @@ into continuity mode and place the two leads from the multimeter at different
 points in your circuit, and if there is a connection between the two points the
 meter will emit the tone.
 
+## Light up LED
+
+Now that we have discussed the basics of electrical circuits, let's build our first circuit. In this circuit, we will simply light up a LED. We will start off with a look at the schematic diagram, which will tell us how to build the circuit:
+
+![](./resource/3.PNG)
+
+In this diagram, we can see that the circuit consists of one 9-volt power
+source (9-volt battery) one LED and one resistor. One of the first questions
+people new to circuits ask is how we calculate the value of the resistor. To calculate this value, we need to know what the forward voltage for the LED is and the maximum current it can take without blowing. The forward
+voltage is the voltage amount required before the LED will conduct electricity and the voltage drop that will occur. If you purchase the LED from a good electronic store, they should have a datasheet that will tell you the forward voltage and the maximum current the LED can take.
+
+We use the forward voltage and maximum current in the following formula
+to figure out what size resistor we need:
+
+![](./resource/1.PNG)
+
+In this formula, the voltage marked with the S is the voltage source, which is
+9V in this example. The voltage and current marked with LED is the
+forward voltage and maximum current, respectively, for the LED. The LED I
+am using for this example is 3.4 volts and 20 milliamps. This gives a value
+of (9 - 3.4 volts)/20 milliamps, which are 280 ohms. Since I do not have a
+resistor with a value of 280 ohms
+
+The following photograph shows how I connected everything:
+
+![](./resource/2.PNG)
+
+If you have everything connected correctly the LED will light up when the
+battery is connected
+
 ![](http://i.imgur.com/GgKKjYC.jpg)
 
 **The most dangerous circuit is a short circuit. A short circuit is one that
