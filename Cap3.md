@@ -214,7 +214,7 @@ where we light up a LED.
 
 Now that we have discussed the basics of electrical circuits, let's build our first circuit. In this circuit, we will simply light up a LED. We will start off with a look at the schematic diagram, which will tell us how to build the circuit:
 
-![]()
+
 
 In this diagram, we can see that the circuit consists of one 9-volt power
 source (9-volt battery) one LED and one resistor. One of the first questions
@@ -224,7 +224,7 @@ voltage is the voltage amount required before the LED will conduct electricity a
 We use the forward voltage and maximum current in the following formula
 to figure out what size resistor we need:
 
-![]()
+![](https://lh3.googleusercontent.com/5PbE7yz2EhXDFnLSt1FTzesNMDQRDklIzWe_KSuxJ86R6rejea7zbRlkfCM_gYdtCILuzQ=s147)
 
 In this formula, the voltage marked with the S is the voltage source, which is
 9V in this example. The voltage and current marked with LED is the
@@ -235,12 +235,12 @@ resistor with a value of 280 ohms
 
 The following photograph shows how I connected everything:
 
-![]()
+![](https://lh3.googleusercontent.com/2YMfNH-Nh4Ew6UGuFcQr2B6z11AiCxNZ7MS-HUroPEx1h6Zd6xn5hTMzR1UzzIg2CzjY=s93)
 
 If you have everything connected correctly the LED will light up when the
 battery is connected
 
-![]()
+![](https://lh3.googleusercontent.com/o5vLupO1DmfTD0nCh9H5_Ug9E7qsDRkvdKDVJcRZK3Oezm4NmSnytHysUKTfc_Mbnl-qiQ=s103)
 
 
 
